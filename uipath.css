@@ -1,0 +1,222 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 70, 22);
+    color: #fff;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-right: 40px;
+    text-align: center;
+    flex: 1;
+    font-size: 2rem;
+}
+
+.logo {
+    max-width: 140px;
+    height: auto;
+}
+nav {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+    font-size: 23px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav li {
+    margin-right: 20px;
+    position: relative;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+nav li::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease-out;
+}
+
+nav li:hover::before {
+    width: 100%;
+}
+#gallery h1{
+    font-size: 33px;
+    display: inline;
+    position: relative;
+    text-align: center;
+    left: 500px;
+    bottom: 80px;
+} 
+#gallery #vector-logo{
+    height: 120px;
+    width: 120px;
+}
+#gallery-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#gallery img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px solid black ;
+}
+#event1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#event2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: rgb(250, 70, 22);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+#team h1{
+    font-size: 28px;
+}
+
+.section-home {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+}
+
+.section-about {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+}
+
+.about-us-div {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+.about-us-div:hover {
+    background-color: rgb(250, 70, 22);
+}
+
+.section-gallery {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+}
+
+.section-team {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+}
+
+.section-events,
+.section-community-focus {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+}
+main hr {
+  border: 0;
+  background: whitesmoke;
+  height: 3px;
+  margin: 30px 40px;
+}
+footer {
+    background-color: rgb(8, 19, 31);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: rgb(250, 70, 22);
+}
+
+.footer-icons i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    nav{
+        font-size: 16px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+    #gallery h1{
+        font-size: 30px;
+        left: 50px;
+        bottom: 80px;
+    } 
+    section{
+        margin: 15px 0px;
+    }
+    #gallery img{
+        height: 150px;
+        width: 150px;
+    }
+
+}
